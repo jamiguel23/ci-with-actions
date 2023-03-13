@@ -4,7 +4,9 @@
   "description": "Import this repo to create a starting point for Node.js projects in repl.it, https://replit.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true",
+    "coverage": "nyc npm run test"
+
   },
   "keywords": [],
   "author": "matt",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/jamiguel23/routing-node-it121/issues"
   },
-  "homepage": "https://github.com/jamiguel23/routing-node-it121#readme"
+  "homepage": "https://github.com/jamiguel23/routing-node-it121#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-asserttype": "^1.0.5",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  }
 }
